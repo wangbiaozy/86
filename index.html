@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>86快跑 PK赢2G</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--钱包9.0开始支持 -->
+    <meta name="Alipay:title" content="86快跑 PK赢2G"/>
+    <!--自定义图片//钱包8.6开始支持-->
+    <meta name="Alipay:imgUrl" content="http://wx.nebiim.com:8088/1801/race0103/img/shareImg.png"/>
+    <!--自定义摘要//钱包8.6开始支持-->
+    <meta name="Alipay:desc" content="奔跑吧2018！还有2G等你来挑战！"/>
+    <!--自定义链接//钱包10.0.0开始支持-->
+    <meta name="Alipay:link" content="https://openauth.alipay.com/oauth2/publicAppAuthorize.htm?app_id=2016041101287271&scope=auth_userinfo&redirect_uri=http://wx.10086.cn/qq/userexperience/blacklist/getSurprise"/>
+    <link rel="stylesheet" href="./css/index.css">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8d08be05b2d735aa6a5487d0f64505f4";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</head>
+<body>
+    <!-- loading页面 -->
+    <div id="loading">
+        <div class="cont">
+            <div class="spinner">
+                <div class="contIn bounce1"></div>
+                <div class="contIn bounce2"></div>
+                <div class="contIn bounce3"></div>
+            </div>
+        </div>
+        <div class="coverDiv"></div>
+    </div>
+
+    <!-- 首页 -->
+    <div class="page home">
+       	<img class="title" src="./img/title.png" alt="">
+       	<div class="shengyu_box">
+       		今天还剩0次PK机会
+       	</div>
+        <img class="home_pk_btn" src="./img/goPk.png" alt="">
+        <img class="toGetAward_btn" src="./img/goAward.png" alt="">
+        <img class="rule_btn" src="./img/rule_btn.png" alt="">
+        <img class="myPrize_btn" src="./img/myPrize_btn.png" alt="">
+        <img class="miji_btn" src="./img/miji.png" alt="">
+        <img class="share_btn" src="./img/share_btn.png" alt="">
+    </div> 
+    <!-- 游戏页面 -->
+    <div class="game page">
+      <h1 id='game_title' class="game_title">
+        <img src="./img/shengli.png" alt="">
+      </h1>
+      <div class="game_box">
+        <div id='xian_left' class="left_xian_container">
+          <img src="./img/xian.png" alt="">
+          <img src="./img/xian.png" alt="">
+          <img src="./img/xian.png" alt="">
+        </div>
+        <div id='xian_center' class="center_xian_container">
+          <img src="./img/xian_center.png" alt="">
+        </div>
+        <div id='xian_right' class="right_xian_container">
+          <img src="./img/xian.png" alt="">
+          <img src="./img/xian.png" alt="">
+          <img src="./img/xian.png" alt="">
+        </div>
+        <img id='robot' class="robot" src="./img/86.png" alt="">
+        <img id='man' class="man" src="./img/wo.png" alt="">
+        <img class="hand" src="./img/hand.png" alt="">
+        <button class="run_btn"></button>
+      </div>
+    </div>
+    <!-- 抽奖页面 -->
+    <div class="lottery page">
+      <div class="lottery_box">
+        <div class="lottery_container">
+          <div class="box twoG">
+            <div class="cover"></div>
+          </div>
+          <div class="box zaijiezaili">
+            <div class="cover"></div>
+          </div>
+          <div class="box oneG">
+            <div class="cover"></div>
+          </div>
+          <div class="box wubaiM">
+            <div class="cover"></div>
+          </div>
+          <div class="box start_lottery">
+            <div class="cover"></div>
+          </div>
+          <div class="box again">
+            <div class="cover"></div>
+          </div>
+          <div class="box again">
+            <div class="cover"></div>
+          </div>
+          <div class="box yibaiwuM">
+            <div class="cover"></div>
+          </div>
+          <div class="box sanshiM">
+            <div class="cover"></div>
+          </div>
+        </div>
+      </div>
+      <p class="lottery_font">今天还剩0次抽奖机会</p>
+      <img class="back_to_home_btn" src="./img/toHome_btn.png" alt="">
+    </div>
+
+    <!-- 秘籍弹窗 -->
+    <div class="alert miji">
+      <div class="cover1">
+        <img src="./img/zhinan1.png" alt="">
+        <img src="./img/goPk.png" alt="">
+      </div>
+      <div class="cover2">
+        <img src="./img/zhinan2.png" alt="">
+        <img src="./img/run_btn.png" alt="">
+      </div>
+    </div>
+
+    <!-- 活动结束 -->
+    <div class="activity_end alert">
+      <div class="alert_box">
+        <img src="./img/alert_end.png" alt="">
+        <img class="close close_btn" src="./img/close_btn.png" alt="">
+      </div>
+    </div>
+    <!-- 提示登录 -->
+    <div class="login alert">
+      <div class="alert_box">
+        <img src="./img/denglu.png" alt="">
+        <img class="close close_btn" src="./img/close_btn.png" alt="">
+      </div>
+    </div>
+    <!-- 规则弹窗 -->
+    <div class="rule alert">
+      <div class="rule_box">
+        <div class="rule_text">
+          <p>1、活动时间<br>2018年1月5日-1月28日</p>
+          <p>2、参与方式<br>
+            活动期间，用户每天有三次挑战86君的机会。首页点击【去PK】，进入活动页，连续点击【使劲跑】，和86君进行赛跑比赛。每次胜利后即可获得1次抽奖机会。在首页点击【去抽奖】，进入大转盘页面进行抽奖。</p>
+          <p>3、活动奖品:<br>
+            2G：1000份<br>
+            1G：3000份<br>
+            500M：6000份<br>
+            150M：12000份<br>
+            30M：25000份</p>
+          <p>4、活动期间，用户需要持续订阅并绑定“中国移动10086”支付宝生活号，若取消订阅或绑定则无法发放奖品。</p>
+          <p>5、赠送的流量为国内流量（河北、贵州为省内流量），2/3/4G通用，当月有效，流量不结转。  </p>
+          <p>6、中奖查询：点击活动页面右下角“我的奖品”查询或于活动结束10个工作日后点击菜单“个人主页”底部“中奖查询专区”查询。</p>
+          <p>7、流量奖品将于活动结束30个工作日内赠送至用户认证登录的手机号码中，届时会有短信提醒。</p>
+          <p>8、同一客户活动期间仅限中奖一次，若重复中奖价值就高。</p>
+          <p>9、号码欠费、未进行实名制认证、处于非正常状态的用户，流量可能无法成功到帐。</p>
+          <p>10、携号转网、集团代付/对公托收（如政企动力100行业卡）、内部员工号码客户暂时无法参与，流量无法到账。</p>
+          <p>11、一经发现违规等恶意操作将取消获奖资格。</p>
+          <p>12、本次活动中奖概率约为0.05%-10%，根据历史活动经验测算，具体以实际参与为准。</p>
+        </div>
+        <img class="close close_btn" src="./img/close_btn.png" alt="">
+      </div>
+    </div>
+    <!-- 今天PK次数用完，明天再来 -->
+    <div class="out alert">
+      <div class="alert_box">
+        <img src="./img/pkyongwan.png" alt="">
+        <img class="close out_close" src="./img/close_btn.png" alt="">
+      </div>
+    </div>
+    <!-- 最后一天pk次数用完 -->
+    <div class="alert lastday_out">
+      <div class="alert_box">
+        <img src="./img/pkyongwan_lastday.png" alt="">
+        <img class="close lastday_out_close" src="./img/close_btn.png" alt="">
+      </div>
+    </div>
+
+    <!-- 奖品展示弹窗 -->
+    <div class="alert prize">
+      <div class="prize_box">
+        <p>棒棒哒！恭喜</p>
+        <p>136****2918用户</p>
+        <p>获得<span class="liuliang_font">30M</span></p>
+        <img class="close close_btn" src="./img/close_btn.png" alt="">
+      </div>
+    </div>
+    <!-- 再来一次抽奖弹窗 -->
+    <div class="lottery_again alert">
+      <div class="alert_box">
+        <img src="./img/choujaingshibai.png" alt="">
+        <img class="close close_btn" src="./img/close_btn.png" alt="">
+      </div>
+    </div>
+    <!-- 没有获得奖品提示空空的弹窗 -->
+    <div class="kongkong alert">
+      <div class="alert_box">
+        <img src="./img/kongkong.png" alt="">
+        <img class="close close_btn" src="./img/close_btn.png" alt="">
+      </div>
+    </div>
+    <!-- 抽奖次数用完 -->
+    <div class="lottery_out alert">
+      <div class="alert_box">
+        <img src="./img/choujiangyongwan.png" alt="">
+        <img class="close close_btn" src="./img/close_btn.png" alt="">
+      </div>
+    </div>
+    <!-- 准备好了吗 -->
+    <div class="ready alert">
+      <div class="alert_box">
+        <img src="./img/ready.png" alt="">
+      </div>
+    </div>
+    <!-- 获得一次抽奖机会 -->
+    <div class="get_lottery alert">
+      <div class="get_lottery_box">
+        <img class="get_lottery_to_lottery" src="./img/quchoujiang_btn.png" alt="">
+        <img class="get_lottery_pk_again" src="./img/zaiPK_btn.png" alt="">
+        <!-- <img class="close close_btn" src="./img/close_btn.png" alt=""> -->
+      </div>
+    </div>
+    <!-- pk失败 -->
+    <div class="pk_failure alert">
+      <div class="alert_box">
+        <img src="./img/zaiPK.png" alt="">
+        <img class="close close_btn" src="./img/close_btn.png" alt="">
+      </div>
+    </div>
+    <!-- 分享弹窗 -->
+    <div class="share alert">
+      <img class="share_img" src="./img/share.png" alt="">
+    </div>
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/ajax.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

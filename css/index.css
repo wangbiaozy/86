@@ -1,0 +1,559 @@
+/*reset CSS*/
+html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6 {margin: 0;padding: 0}
+
+h1,h2,h3,h4,h5,h6 {font-size: 100%;font-weight: normal}
+
+ul {list-style: none;}
+
+button,input,select,textarea {margin: 0;}
+
+html {box-sizing: border-box;}
+
+*,*:before,*:after {box-sizing: inherit;}
+
+img,embed,object,audio,video {height: auto;max-width: 100%;}
+
+iframe {border: 0;}
+
+table {border-collapse: collapse;border-spacing: 0;}
+
+td,th {padding: 0;text-align: left;}
+
+a,button,input,textarea {-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+
+button{border: none;background: none;}
+/*reset CSS end*/
+
+
+/*public css*/
+/*@font-face{
+	font-family: 'myFont';
+	src: url('../img/font.TTF');
+}*/
+
+@font-face {
+  font-family: 'myFont';
+  src: url('../font/font.eot');
+  src:
+    url('../font/font.eot?#font-spider') format('embedded-opentype'),
+    url('../font/font.woff') format('woff'),
+    url('../font/font.ttf') format('truetype'),
+    url('../font/font.svg') format('svg');
+/*  font-weight: normal;
+  font-style: normal;*/
+}
+
+
+html,body{
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding:0;
+	background: #ffc082;
+}
+
+.page{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	display: none;
+	overflow: hidden;
+}
+
+.alert{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left: 0;
+	background: rgba(0,0,0,0.6);
+	display: none;
+	z-index: 999;
+}
+
+.active{
+	display: block;
+}
+
+img{
+	display: block;
+}
+
+.alert_box{
+	width: 6rem;
+	margin:4rem auto;
+	position: relative;
+}
+
+.close_btn{
+	width: 0.8rem;
+	position: absolute;
+	top:-0.2rem;
+	right: -0.2rem;
+}
+
+.out_close{
+	width: 0.8rem;
+	position: absolute;
+	top:-0.2rem;
+	right: -0.2rem;
+}
+
+.lastday_out_close{
+	width: 0.8rem;
+	position: absolute;
+	top:-0.2rem;
+	right: -0.2rem;
+}
+
+/*public css end*/
+
+
+/*loading*/
+#loading{
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: 9999;
+ background: #000;
+}
+
+.cont {
+  z-index:999;
+  width: 1.5rem;
+  height: 1rem;
+  /* PRESENTATIONAL PURPOSES */
+  margin:-1rem auto auto -0.75rem;
+  position: fixed;
+  top: 50%; left: 50%;
+}
+.spinner { width: 100%; height: 20%; position: absolute; left: 0; top: 40%; text-align: center;
+}
+.contIn {
+  width: 0.3rem;
+  height: 0.3rem;
+  background-color: #fff;
+ 
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+  animation: bouncedelay 1.4s infinite ease-in-out;
+  /* Prevent first frame from flickering when animation starts */
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+}
+.coverDiv {
+    width:100%;height:100%;position:absolute;top:0;left:0;background:#009fe8;z-index:99;
+}
+/* 兼容上下翻 */
+@media screen and (width:640px) {
+    .cont {
+      z-index:999;
+       width: 200px;
+      height: 200px;
+      /* PRESENTATIONAL PURPOSES */
+      margin:-100px auto auto -100px;
+      position: fixed;
+      top: 50%; left: 50%; 
+	}
+}
+.bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+ 
+.bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+ 
+@-webkit-keyframes bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0.0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+ 
+@keyframes bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 40% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+/*loading*/
+
+.home{
+	background: url(../img/home_bg.png) no-repeat;
+	background-size: 100%;
+}
+
+.title{
+	width: 5rem;
+	margin:0 auto;
+	margin-top: 0.5rem;
+}
+
+.shengyu_box{
+	width: 4.5rem;
+	height: 0.7rem;
+	margin: 0 auto;
+	background:url(../img/shengyu.png) no-repeat;
+	background-size: 100%;
+	font-size: 0.3rem;
+	text-align: center;
+	color: #fff;
+	line-height: 0.6rem;
+}
+
+.home_pk_btn{
+	position: absolute;
+	width:2.5rem;
+	top:9rem;
+	left: 2.5rem;
+}
+
+.toGetAward_btn{
+	position: absolute;
+	width:2.5rem;
+	top:10rem;
+	left: 2.5rem;
+}
+
+.rule_btn{
+	position: absolute;
+	width:0.8rem;
+	top:10rem;
+	left: 0.2rem;
+}
+
+.myPrize_btn{
+	position: absolute;
+	width:0.8rem;
+	top:10rem;
+	right: 0.2rem;
+}
+
+.miji_btn{
+	position: absolute;
+	width:1.5rem;
+	top:9rem;
+	right: 0.3rem;
+}
+
+.share_btn{
+	position: absolute;
+	width:0.6rem;
+	top:0.5rem;
+	right: 0.3rem;
+}
+
+.prize_box{
+	width: 6rem;
+	height: 3.2rem;
+	margin:4rem auto;
+	position: relative;
+	background: url(../img/prize_box.png) no-repeat;
+	background-size: 100%;
+	padding-top: 0.7rem;
+}
+
+.prize_box>p{
+	text-align: center;
+	height: 0.6rem;
+	font-size: 0.38rem;
+	color: #fafac6;
+	letter-spacing:0.02rem;
+	text-shadow: -0.05rem 0.05rem 0.05rem #4f9444; 
+	font-family: 'myFont';
+}
+
+.liuliang_font{
+	display: inline-block;
+	color: #efcf24;
+	font-size: 0.45rem;
+	position: relative;
+	top:-0.05rem;
+}
+
+.rule_box{
+	width: 5.7rem;
+	height: 10rem;
+	margin:0.5rem auto;
+	position: relative;
+	background: url(../img/rule.png) no-repeat;
+	background-size: 100%;
+	padding-top: 1.3rem;
+}
+
+.rule_text{
+	width: 5rem;
+	height: 7rem;
+	margin: 0 auto;
+	overflow-y: scroll;
+}
+
+.rule_text>p{
+	font-size: 0.28rem;
+	color: #fafac6;
+	text-shadow: -0.05rem 0.05rem 0.05rem #4f9444; 
+	margin-top: 0.15rem;
+	font-weight: bold;
+}
+
+.get_lottery_box{
+	width: 5.7rem;
+	height: 10rem;
+	margin:3rem auto;
+	position: relative;
+	background: url(../img/huodechoujiang.png) no-repeat;
+	background-size: 100%;
+	padding-top: 1.3rem;
+}
+
+.get_lottery_to_lottery{
+	width: 2.5rem;
+	margin: 0rem auto;
+	margin-top: 0.5rem;
+}
+
+.get_lottery_pk_again{
+	width: 2.5rem;
+	margin: 0.1rem auto;
+}
+
+.share_img{
+	width: 5rem;
+	float: right;
+	margin-right: 0.4rem;
+}
+
+.game{
+	background: url(../img/page_bg.png) no-repeat;
+	background-size: 100%;
+}
+
+.game_title{
+	width: 7rem;
+	position: absolute;
+	top:0.3rem;
+	left: 0.25rem;
+	z-index: 99;
+}
+
+.game_box{
+	width: 6.3rem;
+	height: 101%;
+	position: absolute;
+	top:-0.1rem;
+	left: 0.65rem;
+	background: url(../img/load.png) no-repeat;
+	background-size: 100%;
+}
+
+.left_xian_container{
+	position: absolute;
+	width: 0.2rem;
+	left: 1.5rem;
+	bottom: 15%;
+}
+
+.center_xian_container{
+	position: absolute;
+	width: 0.2rem;
+	left: 3.05rem;
+	bottom: 12%;
+}
+
+.right_xian_container{
+	position: absolute;
+	width: 0.2rem;
+	right: 1.5rem;
+	bottom: 15%;
+}
+
+.run_btn{
+	width: 2.5rem;
+	height: 1.2rem;
+	position: absolute;
+	left: 1.9rem;
+	bottom: 5%;
+	background: url(../img/gogogo.png) no-repeat;
+	background-size: 100%;
+	list-style-type:none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	outline:none
+}
+
+.robot{
+	position: absolute;
+	z-index: 98;
+	width: 1.5rem;
+	left: 0.75rem;
+	bottom: 15%;
+}
+
+.man{
+	position: absolute;
+	z-index: 98;
+	width: 1.5rem;
+	right: 0.9rem;
+	bottom: 15%;
+}
+
+.hand{
+	width: 1rem;
+	position: absolute;
+	z-index: 97;
+	bottom: 5%;
+	right: 1.2rem;
+}
+
+
+.lottery{
+	background: url(../img/choujiang_bg.png) no-repeat;
+	background-size: 100%;
+}
+
+.lottery_box{
+	width: 7rem;
+	height: 7rem;
+	margin:0 auto;
+	margin-top: 1.2rem;
+	background: url(../img/choujiang_box.png) no-repeat;
+	background-size: 100%;
+	padding-top: 0.5rem;
+}
+
+.lottery_container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	width: 6rem;
+	height: 6rem;
+	margin: 0 auto;
+}
+
+.box{
+	width: 32%;
+	height: 32%;
+	border-radius: 0.3rem;
+	overflow: hidden;
+}
+
+.twoG{
+	background: url(../img/2G.png) no-repeat;
+	background-size: 100%;
+}
+
+.zaijiezaili{
+	background: url(../img/zaijiezaili.png) no-repeat;
+	background-size: 100%;
+}
+
+.oneG{
+	background: url(../img/1G.png) no-repeat;
+	background-size: 100%;
+}
+
+.wubaiM{
+	background: url(../img/500M.png) no-repeat;
+	background-size: 100%;
+}
+
+.start_lottery{
+	background-image: url(../img/shan.gif);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.again{
+	background: url(../img/again.png) no-repeat;
+	background-size: 100%;
+}
+
+.yibaiwuM{
+	background: url(../img/150M.png) no-repeat;
+	background-size: 100%;
+}
+
+.sanshiM{
+	background: url(../img/30M.png) no-repeat;
+	background-size: 100%;
+}
+
+.cover{
+	width: 100%;
+	height: 100%;
+	background: rgba(252,252,252,0.7);
+	display: none;
+}
+
+.lottery_font{
+	margin-top: 0.2rem;
+	font-size: 0.35rem;
+	text-align: center;
+	font-weight: bold;
+	color: #f55728;
+	text-shadow:0.05rem 0.05rem 0.05rem #bd9938;
+}
+
+.back_to_home_btn{
+	width: 2.5rem;
+	margin: 0.7rem auto;
+}
+
+.cover1{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.cover1>img:nth-of-type(1){
+	position: absolute;
+	width: 6rem;
+	top:6.5rem;
+	left: 0.2rem;
+}
+
+.cover1>img:nth-of-type(2){
+	position: absolute;
+	width:2.5rem;
+	top:9rem;
+	left: 2.5rem;
+}
+
+.cover2{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.cover2>img:nth-of-type(1){
+	position: absolute;
+	width: 5.7rem;
+	top:4.5rem;
+	left: 0.2rem;
+}
+
+.cover2>img:nth-of-type(2){
+	position: absolute;
+	width:2.4rem;
+	top:9rem;
+	left: 2.5rem;
+}
+
+
